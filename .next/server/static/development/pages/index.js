@@ -141,17 +141,29 @@ function App() {
       lineNumber: 12
     },
     __self: this
-  }, "Logue-se"), __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["Input"], {
-    placeholder: "Digite seu email",
+  }, "Logue-se"), __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["InputContainer"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: this
-  }))), __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["GlobalStyle"], {
+  }, __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["InputLabel"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 14
+    },
+    __self: this
+  }, "Digite seu email"), __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["Input"], {
+    placeholder: "Email",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  })))), __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["GlobalStyle"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
     },
     __self: this
   }));
@@ -165,7 +177,7 @@ function App() {
 /*!*************************!*\
   !*** ./pages/styles.js ***!
   \*************************/
-/*! exports provided: Container, Form, Title, Input, GlobalStyle */
+/*! exports provided: Container, Form, Title, InputContainer, InputLabel, Input, GlobalStyle */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -173,6 +185,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return Container; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Form", function() { return Form; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Title", function() { return Title; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InputContainer", function() { return InputContainer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InputLabel", function() { return InputLabel; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Input", function() { return Input; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GlobalStyle", function() { return GlobalStyle; });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
@@ -190,7 +204,7 @@ const Container = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div`
 const Form = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.form`
     width: 90%;
     max-width: 500px;
-    background-color: #eee;
+    background-color: #fff;
     margin-left: 5%;
     border: 1px solid #eee;
     margin-top: 7%;
@@ -206,6 +220,18 @@ const Title = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h1`
     font-weight: bold;
     margin-top: 5px;
 
+
+`;
+const InputContainer = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+`;
+const InputLabel = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h3`
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10;
 
 `;
 const Input = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.input`

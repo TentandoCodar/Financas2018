@@ -13,7 +13,7 @@ export const Container = styled.div`
 export const Form = styled.form`
     width: 90%;
     max-width: 500px;
-    background-color: #eee;
+    background-color: #fff;
     margin-left: 5%;
     border: 1px solid #eee;
     margin-top: 7%;
@@ -30,6 +30,19 @@ export const Title = styled.h1`
     font-weight: bold;
     margin-top: 5px;
 
+
+`;
+
+export const InputContainer = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+`;
+export const InputLabel = styled.h3`
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10;
 
 `;
 export const Input = styled.input`

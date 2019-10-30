@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import withReveal from 'react-reveal/withReveal';
 import Fade from 'react-reveal/Fade';
-import {Container, Form, Title, Input,GlobalStyle} from './styles';
+import {Container, Form, Title, InputContainer,InputLabel, Input,GlobalStyle} from './styles';
 
 
 function App() {
@@ -10,7 +10,10 @@ function App() {
         <Container>
             <Form>
                 <Title>Logue-se</Title>
-                <Input placeholder="Digite seu email"></Input>
+                <InputContainer>
+                  <InputLabel>Digite seu email</InputLabel>
+                  <Input placeholder="Email"></Input>
+                </InputContainer>
             </Form>
         </Container>
         <GlobalStyle></GlobalStyle>
