@@ -1362,10 +1362,10 @@ function concatArrays(originVal, newVal) {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cebep6%5CDocuments%5COlimpiadas%5Cfinancas2018%5Cpages%5Cindex.js!./":
-/*!********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cebep6%5CDocuments%5COlimpiadas%5Cfinancas2018%5Cpages%5Cindex.js ***!
-  \********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CDotal%5CDocuments%5COlimpiada2019%5CFrontendFinancas2018%5Cpages%5Cindex.js!./":
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CDotal%5CDocuments%5COlimpiada2019%5CFrontendFinancas2018%5Cpages%5Cindex.js ***!
+  \*******************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5453,7 +5453,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_reveal_Fade__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-reveal/Fade */ "./node_modules/react-reveal/Fade.js");
 /* harmony import */ var react_reveal_Fade__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_reveal_Fade__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles */ "./pages/styles.js");
-var _jsxFileName = "C:\\Users\\ebep6\\Documents\\Olimpiadas\\financas2018\\pages\\index.js";
+var _jsxFileName = "C:\\Users\\Dotal\\Documents\\Olimpiada2019\\FrontendFinancas2018\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -5461,53 +5461,61 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function App() {
+  const {
+    0: height,
+    1: setHeight
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    setHeight(window.innerHeight);
+  }, []);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 16
     },
     __self: this
   }, __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["Container"], {
+    height: height,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 17
     },
     __self: this
   }, __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["Form"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 18
     },
     __self: this
   }, __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["Title"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 19
     },
     __self: this
   }, "Logue-se"), __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["InputContainer"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 20
     },
     __self: this
   }, __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["InputLabel"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 21
     },
     __self: this
   }, "Digite seu email"), __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["Input"], {
     placeholder: "Email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 22
     },
     __self: this
   })))), __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["GlobalStyle"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 26
     },
     __self: this
   }));
@@ -5538,7 +5546,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject7() {
-  const data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    * {\n        margin: 0;\n        padding: 0;\n        font-family: Roboto;\n\n    }\n\n"]);
+  const data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    * {\n        margin: 0;\n        padding: 0;\n        font-family: Roboto;\n\n    }\n    @keyframes fadeIn {\n        from {\n            opacity: 0,\n            transform: scale(0);\n        }\n        to {\n            opacity: 1,\n            transform: scale(1);\n        }\n    }\n\n"]);
 
   _templateObject7 = function () {
     return data;
@@ -5558,7 +5566,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  const data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 14px;\n    font-weight: bold;\n    margin-left: 10;\n\n"]);
+  const data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-size: 14px;\n    font-weight: bold;\n    margin-left: 10px;\n\n"]);
 
   _templateObject5 = function () {
     return data;
@@ -5568,7 +5576,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  const data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n\n"]);
+  const data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    align-text: left;\n    margin-left: 5%;\n\n"]);
 
   _templateObject4 = function () {
     return data;
@@ -5588,7 +5596,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  const data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 90%;\n    max-width: 500px;\n    background-color: #fff;\n    margin-left: 5%;\n    border: 1px solid #eee;\n    margin-top: 7%;\n    text-align: center;\n    border-radius: 10px;\n    display:flex;\n    flex-direction: column;\n    align-items: center;\n    padding: 5px 0 15px;\n"]);
+  const data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    width: 90%;\n    max-width: 500px;\n    max-height: 300px;\n    background-color: #fff;\n    \n    border: 1px solid #eee;\n    margin-top: 7%;\n    animation: fadeIn 1000ms;\n    border-radius: 10px;\n    display:flex;\n    flex-direction: column;\n    align-items: center;\n    padding: 5px 0 15px;\n"]);
 
   _templateObject2 = function () {
     return data;
@@ -5598,7 +5606,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  const data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    flex: 1;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    background-color: #fff;\n\n"]);
+  const data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    flex: 1;\n    display: flex;\n    \n    background-color: #999;\n    background-size:cover;\n    height: ", "px;\n    justify-content: center;\n    \n"]);
 
   _templateObject = function () {
     return data;
@@ -5609,7 +5617,7 @@ function _templateObject() {
 
 
 
-const Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject());
+const Container = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject(), props => props.height);
 const Form = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].form(_templateObject2());
 const Title = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1(_templateObject3());
 const InputContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div(_templateObject4());
@@ -5620,13 +5628,13 @@ const GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["creat
 /***/ }),
 
 /***/ 0:
-/*!************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cebep6%5CDocuments%5COlimpiadas%5Cfinancas2018%5Cpages%5Cindex.js ***!
-  \************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CDotal%5CDocuments%5COlimpiada2019%5CFrontendFinancas2018%5Cpages%5Cindex.js ***!
+  \***********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cebep6%5CDocuments%5COlimpiadas%5Cfinancas2018%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Cebep6%5CDocuments%5COlimpiadas%5Cfinancas2018%5Cpages%5Cindex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CDotal%5CDocuments%5COlimpiada2019%5CFrontendFinancas2018%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CDotal%5CDocuments%5COlimpiada2019%5CFrontendFinancas2018%5Cpages%5Cindex.js!./");
 
 
 /***/ }),

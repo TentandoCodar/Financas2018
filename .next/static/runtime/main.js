@@ -3953,7 +3953,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\Users\\ebep6\\Documents\\Olimpiadas\\financas2018\\.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\Users\\Dotal\\Documents\\Olimpiada2019\\FrontendFinancas2018\\.next");
       return error;
     }
 

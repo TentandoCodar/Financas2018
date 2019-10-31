@@ -109,7 +109,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_reveal_Fade__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-reveal/Fade */ "react-reveal/Fade");
 /* harmony import */ var react_reveal_Fade__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_reveal_Fade__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles */ "./pages/styles.js");
-var _jsxFileName = "C:\\Users\\ebep6\\Documents\\Olimpiadas\\financas2018\\pages\\index.js";
+var _jsxFileName = "C:\\Users\\Dotal\\Documents\\Olimpiada2019\\FrontendFinancas2018\\pages\\index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -117,53 +117,61 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function App() {
+  const {
+    0: height,
+    1: setHeight
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    setHeight(window.innerHeight);
+  }, []);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 16
     },
     __self: this
   }, __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["Container"], {
+    height: height,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 17
     },
     __self: this
   }, __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["Form"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 18
     },
     __self: this
   }, __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["Title"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 19
     },
     __self: this
   }, "Logue-se"), __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["InputContainer"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 20
     },
     __self: this
   }, __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["InputLabel"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 21
     },
     __self: this
   }, "Digite seu email"), __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["Input"], {
     placeholder: "Email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 22
     },
     __self: this
   })))), __jsx(_styles__WEBPACK_IMPORTED_MODULE_3__["GlobalStyle"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 26
     },
     __self: this
   }));
@@ -196,19 +204,22 @@ __webpack_require__.r(__webpack_exports__);
 const Container = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div`
     flex: 1;
     display: flex;
-    align-items: center;
+    
+    background-color: #999;
+    background-size:cover;
+    height: ${props => props.height}px;
     justify-content: center;
-    background-color: #fff;
-
+    
 `;
 const Form = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.form`
     width: 90%;
     max-width: 500px;
+    max-height: 300px;
     background-color: #fff;
-    margin-left: 5%;
+    
     border: 1px solid #eee;
     margin-top: 7%;
-    text-align: center;
+    animation: fadeIn 1000ms;
     border-radius: 10px;
     display:flex;
     flex-direction: column;
@@ -226,12 +237,14 @@ const InputContainer = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-text: left;
+    margin-left: 5%;
 
 `;
 const InputLabel = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h3`
     font-size: 14px;
     font-weight: bold;
-    margin-left: 10;
+    margin-left: 10px;
 
 `;
 const Input = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.input`
@@ -250,6 +263,16 @@ const GlobalStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["createGlobal
         font-family: Roboto;
 
     }
+    @keyframes fadeIn {
+        from {
+            opacity: 0,
+            transform: scale(0);
+        }
+        to {
+            opacity: 1,
+            transform: scale(1);
+        }
+    }
 
 `;
 
@@ -262,7 +285,7 @@ const GlobalStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["createGlobal
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\ebep6\Documents\Olimpiadas\financas2018\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! C:\Users\Dotal\Documents\Olimpiada2019\FrontendFinancas2018\pages\index.js */"./pages/index.js");
 
 
 /***/ }),
