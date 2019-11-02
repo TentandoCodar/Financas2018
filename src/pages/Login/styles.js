@@ -13,7 +13,8 @@ export const Container = styled.div`
 export const Form = styled.form`
     width: 90%;
     max-width: 500px;
-    max-height: 300px;
+    max-height: 400px;
+    height: 75%;
     background-color: #fff;
     
     border: 1px solid #eee;
@@ -94,4 +95,10 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
+`;
+
+export const ErrorText = styled.p`
+    font-size: 15px;
+    color: #eb4034;
+    margin-top: 15px;
 `;

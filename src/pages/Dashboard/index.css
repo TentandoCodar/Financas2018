@@ -1,0 +1,31 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+.Drawer {
+    animation: Drawer 1000ms;
+}
+
+.DrawerLeave {
+    animation: DrawerLeave 1000ms;
+    
+}
+
+@keyframes Drawer {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes DrawerLeave {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

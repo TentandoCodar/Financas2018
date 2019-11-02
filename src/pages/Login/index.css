@@ -1,0 +1,23 @@
+
+
+.Container {
+    
+    
+    background-image: url('../../assets/ImagemForFinances.jpg');
+}
+
+.FormContainer {
+    animation: fadeIn 1000ms;
+    background-size:cover;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
